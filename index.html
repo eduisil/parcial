@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Conóceme!</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Christopher</h1>
+        <h1 class="outline">Cano</h1>
+        <h2>Aficionado de la Fórmula 1 y futuro desarrollador de Software</h2>
+    </header>
+    <main class="intro-section">
+        <section class="content">
+            <div class="text-and-image">
+                <div class="text">
+                    <p>
+                        ¡Hola! Soy Christopher y me apasiona el mundo de la programación. Actualmente estoy estudiando Desarrollo de Software en ISIL y estoy emocionado de compartir más sobre mí en esta página web.
+
+                        En este espacio, te invito a conocerme mejor y a explorar qué me motiva. Descubrirás mis intereses, proyectos y metas futuras en esta emocionante carrera.
+                        
+                        ¡Bienvenido a mi sitio web! Espero que disfrutes explorando y conociendo más sobre mi viaje en el mundo del desarrollo de software.
+                    </p>
+                    <a href="#" class="btn"><i class="fa fa-angle-double-down"></i>Conóceme<i class="fa fa-angle-double-down"></i></a>
+                </div>
+                <div class="image">
+                    <img src="img/yo.png" alt="yo">
+                </div>
+            </div>
+        </section>
+        <section class="image-gallery">
+            <a href="f1.html" class="image-link" onmouseover="playVideo()" onmouseout="stopVideo()">
+                <div id="media-container">
+                    <img src="https://img.redbull.com/images/c_fill,g_auto,w_350,h_318/q_auto,f_auto/redbullcom/2021/12/12/reznr2fqqawj3ky7hddd/max-lifts-drivers-title-in-abu-dhabi" alt="Max-Verstappen-2023" class="travel-image">
+                    <video id="max-verstappen-video" class="interactive-preview-media__preview-video" style="display: none;" muted>
+                        <source src="img/2023.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <h4>Mi Deporte Favorito</h4>
+            </a>
+            <a href="expectativas-del-curso.html">
+                <img src="img/web.avif" alt="curso" class="travel-image">
+                <h4>Que espero del curso</h4>
+            </a>
+            <a href="mi-futuro.html">
+                <img src="img/nomada.avif" alt="nomada" class="travel-image">
+                <h4>Dentro de 10 años</h4>
+            </a>
+            <a href="hobbies.html">
+                <img src="img/hobbi.webp" alt="nomada" class="travel-image">
+                <h4>Dentro de 10 años</h4>
+            </a>
+        </section>
+    </main>
+<script>
+    function playVideo() {
+    document.getElementById('max-verstappen-video').style.display = 'block';
+    document.getElementById('max-verstappen-video').play();
+    document.querySelector('.travel-image').style.display = 'none';
+}
+
+function stopVideo() {
+    document.getElementById('max-verstappen-video').pause();
+    document.getElementById('max-verstappen-video').currentTime = 0;
+    document.getElementById('max-verstappen-video').style.display = 'none';
+    document.querySelector('.travel-image').style.display = 'block';
+}
+
+</script>
+</body>
+<footer>
+    <p>Derechos de autor © 2024 Christopher Cano - Todos los derechos reservados</p>
+</footer>
+</html>

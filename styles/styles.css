@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'RedBull';
+    src: url('../assets/BullVAR.woff2');
+}
+
+:root {
+    --main-bg-color: #001a30;
+    --text-mark-color: #fcd700;
+    --text-color: #fff;
+    --hilight-main-color: #ea1d2d;
+    --button-color: #db0a40;
+    --main-font-family: 'RedBull';
+}
+
+body {
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001a30, #2789df);
+    color: var(--text-color);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--main-font-family) !important;
+    font-style: italic !important;
+    font-size: 75px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0 !important;
+    line-height: 75px !important;
+    text-transform: uppercase !important;
+    margin: 5px;
+}
+
+.outline {
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-shadow: unset !important;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--text-mark-color);
+}
+
+h3 {
+    background-color: var(--button-color);
+    color: var(--text-mark-color);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+i {
+    margin: 0 5px 0 5px;
+}
+
+.text-and-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.image {
+    margin-left: 0px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.intro-section {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.content {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--hilight-main-color);
+}
+
+/*Estilos para imágenes*/
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+.image-gallery a {
+    position: relative;
+}
+
+.image-gallery a h4 {
+    position: absolute;
+    bottom: 5px; /* Ajusta la posición según sea necesario */
+    left: 10px; /* Ajusta la posición según sea necesario */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    color: var(--text-color); /* Cambia el color del texto si es necesario para que sea visible */
+}
+
+.image-link {
+    display: inline-block;
+    position: relative;
+    width: 200px;  /* Tamaño de la imagen */
+    height: 200px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para ocultar el video fuera del contenedor */
+}
+
+.interactive-preview-media__preview-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar el tamaño del video para cubrir el contenedor */
+    pointer-events: none; /* Para permitir que los eventos del ratón pasen a través del video al contenedor de imagen */
+}
+
+/* Imágenes de inicio */
+.travel-image {
+    width: 200px;  /* Puedes ajustar el tamaño según tus necesidades */
+    height: 200px;
+    border-radius: 10px; /* Para esquinas redondeadas */
+    transition: transform 0.3s; /* Animación suave para el efecto hover */
+    cursor: pointer;
+}
+
+.travel-image:hover {
+    transform: scale(1.1); /* Efecto de hover para agrandar la imagen */
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    position: bottom fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 625px) {
+    body {
+        font-family: var(--main-font-family);
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #001a30, #2789df);
+        color: var(--text-color);
+    }
+    /* Estilos para el encabezado */
+    header {
+        padding-top: 20px; /* Añade más espacio alrededor del encabezado */
+    }
+
+    h1 {
+        font-family: var(--main-font-family) !important;
+        font-style: italic !important;
+        font-size: 45px !important;
+        font-weight: 800 !important;
+        letter-spacing: 0 !important;
+        line-height: 75px !important;
+        text-transform: uppercase !important;
+        margin: 5px;
+    }
+    
+    h2 {
+        font-size: 20px; /* Reduce el tamaño de la fuente del encabezado */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        padding: 5px; /* Añade más espacio alrededor del contenido principal */
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    
+    .text-and-image {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+        width: 100%;
+    }
+
+    .btn {
+        background-color: var(--button-color);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition-duration: 0.4s;
+    }
+
+    /* Estilos para la galería de imágenes */
+    .image-gallery {
+        flex-direction: column; /* Cambia la dirección de la galería a una columna */
+        align-items: center; /* Centra los elementos de la galería */
+    }
+
+    .image-link {
+        display: inline-block;
+        position: relative;
+        width: 100%;  /* Tamaño de la imagen */
+        height: auto;
+        border-radius: 10px; /* Esquinas redondeadas */
+        overflow: hidden; /* Para ocultar el video fuera del contenedor */
+    }
+
+    /* Imágenes de inicio */
+    .travel-image {
+        width: 100%;  /* Puedes ajustar el tamaño según tus necesidades */
+        height: auto;
+        border-radius: 10px; /* Para esquinas redondeadas */
+        cursor: default;
+    }
+
+    .travel-image:hover {
+        transform: none; /* Efecto de hover para agrandar la imagen */
+    }
+
+    .interactive-preview-media__preview-video {
+        display: none; /* Oculta el video en dispositivos móviles */
+    }
+
+}
