@@ -25,6 +25,37 @@ header {
     text-align: center;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #262c68;
+    overflow: hidden;
+    display: flex; /* Usar flexbox para centrar los elementos */
+    justify-content: right; /* Alinear a la derecha los elementos horizontalmente */
+}
+
+/* Estilos para los enlaces dentro del navbar */
+.navbar a {
+    display: block; /* Hacer que los enlaces se comporten como bloques */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 14px 20px; /* Espaciado dentro de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    font-size: 17px; /* Tamaño de la fuente */
+}
+
+/* Cambiar el color del enlace cuando el ratón pasa sobre él */
+.navbar a:hover {
+    background-color: #e62041; /* Color de fondo al pasar el ratón */
+    color: white; /* Asegurarse de que el color del texto sigue siendo blanco */
+}
+
+
 h1 {
     font-family: var(--main-font-family) !important;
     font-style: italic !important;
